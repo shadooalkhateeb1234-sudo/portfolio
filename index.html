@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahd Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button id="theme-toggle">🌙</button>
+
+<header class="hero">
+    <h1>Shahd Alkhateeb</h1>
+    <p>Software Engineer • Java • Flutter • Web</p>
+    <div class="hero-buttons">
+        <a class="btn" href="Shahd_CV.pdf" download>Download CV</a>
+        <a class="btn-outline" href="#contact">Contact Me</a>
+    </div>
+</header>
+
+<section class="about fade">
+    <h2>About Me</h2>
+    <p>
+        Passionate Software Engineering student building real-world apps using Java, Flutter, and Web technologies.
+    </p>
+</section>
+<section class="projects fade">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="images/restaurant.png" alt="Restaurant">
+      <div class="overlay">
+        <h3>🍽️ Restaurant System</h3>
+        <p>Java Swing app with authentication & orders</p>
+        <div class="buttons">
+          <a href="https://github.com/shadooalkhateeb1234-sudo" target="_blank">Code</a>
+          <a href="#" target="_blank">Live</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/flutter.png" alt="Flutter">
+      <div class="overlay">
+        <h3>📱 Flutter App</h3>
+        <p>Modern mobile UI with multiple screens</p>
+        <div class="buttons">
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/ecommerce.png" alt="Ecommerce">
+      <div class="overlay">
+        <h3>🌐 E-commerce</h3>
+        <p>Frontend store using HTML & CSS</p>
+        <div class="buttons">
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> 
+ 
+
+<section class="skills fade">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>Java</span>
+    <span>Flutter</span>
+    <span>HTML & CSS</span>
+    <span>Problem Solving</span>
+  </div>
+</section>
+
+<section id="contact" class="contact fade">
+    <h2>Contact Me</h2>
+
+    <form action="https://formspree.io/f/xbdqoklb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <img id="modal-img" src="" alt="Project Image">
+
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+
+    <a id="modal-link" target="_blank">View Code</a>
+  </div>
+</div>
+
+<footer>
+    <p>© 2026 Shahd</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
